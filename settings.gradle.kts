@@ -3,7 +3,6 @@ pluginManagement {
         gradlePluginPortal()
         maven("https://maven.fabricmc.net")
         maven("https://repo.jpenilla.xyz/snapshots/")
-        maven("https://repo.spongepowered.org/repository/maven-public/") // For VanillaGradle snapshots
     }
     includeBuild("build-logic")
 }
