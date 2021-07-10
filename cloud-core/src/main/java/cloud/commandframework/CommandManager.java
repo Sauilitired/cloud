@@ -911,6 +911,16 @@ public abstract class CommandManager<C> {
     }
 
     /**
+     * Returns the command execution coordinator used in this manager
+     *
+     * @return Command execution coordinator
+     * @since 1.6.0
+     */
+    public @NonNull CommandExecutionCoordinator<C> commandExecutionCoordinator() {
+        return this.commandExecutionCoordinator;
+    }
+
+    /**
      * Transition from the {@code in} state to the {@code out} state, if the manager is not already in that state.
      *
      * @param in  The starting state
